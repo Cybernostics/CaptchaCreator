@@ -1,0 +1,22 @@
+{
+  "name": "cybernostics/captcha",
+  "type": "cakephp-plugin",
+  "description": "Captcha plugin for CakePHP.",
+  "homepage": "http://github.com/Cybernostics/captcha",
+  "keywords": ["cakephp", "captcha", "plugin"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Cybernostics Pty Ltd",
+      "email": "team@cybernostics.com.au",
+      "homepage": "http://cybernostics.com.au"
+    }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "composer/installers": "*"
+  },
+  "extra": {
+    "installer-name": "Captcha"
+  }
+}
