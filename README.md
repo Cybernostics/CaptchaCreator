@@ -1,5 +1,5 @@
-Tags Plugin for CakePHP
-=======================
+Captcha Plugin for CakePHP
+==========================
 
 The **Captcha** plugin allows you to add captcha checks on selected
 forms.
