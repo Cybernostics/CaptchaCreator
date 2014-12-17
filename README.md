@@ -47,10 +47,6 @@ Documentation
 
 For documentation, as well as tutorials, see the [Docs](Docs/Home.md) directory of this repository.
 
-Support
--------
-
-For bugs and feature requests, please use the [issues](https://github.com/CakeDC/migrations/issues) section of this repository.
 
 Contributing
 ------------
