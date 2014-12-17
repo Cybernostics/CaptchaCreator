@@ -55,7 +55,6 @@ For bugs and feature requests, please use the [issues](https://github.com/CakeDC
 Contributing
 ------------
 
-This repository follows the [CakeDC Plugin Standard](http://cakedc.com/plugin-standard). 
 Pull requests welcome.
 
 License
