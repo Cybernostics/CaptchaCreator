@@ -5,6 +5,24 @@ App::uses('CakeSession', 'Model/Datasource');
 class CaptchaText
 {
 	public static $isTest=false;
+	
+	public static function getCaptchaData(){
+	    $name = uniqid();
+	    $salt = Configure::read('Security.salt');
+	    $text = CaptchaText::createCaptchaText($name);
+	    $url = Router::url(array(
+	                            'plugin' => 'CaptchaCreator',
+	                            'controller' => 'Images',
+	                            'action' => 'image',
+	                            $name,
+	                            false
+	                    ));
+	    return array(
+	            'name' => $name,
+	            'value' => self::hashIt($text),
+	            'url' => $url
+	    );
+	}
 
 	public static function createCaptchaText($name = 'captcha')
 	{
@@ -17,7 +35,7 @@ class CaptchaText
 	public static function hashIt($text)
 	{
 		$salt = Configure::read('Security.salt');
-		return sha1($salt+$text);
+		return sha1($salt.$text);
 	}
 
 	public static function validateHash($typedText, $hashText)
@@ -26,9 +44,11 @@ class CaptchaText
 
 		CakeLog::write('hashText from input', $hashText);
 
-		CakeLog::write('hashit on typed text', self::hashIt($typedText));
+		$hash = self::hashIt($typedText);
+		
+		CakeLog::write('hashit on typed text', $hash);
 
-		return $hashText===self::hashIt($typedText);
+		return $hashText===$hash;
 	}
 
 	private static function createText($maxLength=5)

@@ -5,10 +5,7 @@ App::uses('CaptchaCreatorComponent', 'CaptchaCreator.Controller/Component');
 App::uses('CaptchaText', 'CaptchaCreator.Lib');
 
 /**
- * CacheHelper helps create full page view caching.
- *
- * When using CacheHelper you don't call any of its methods, they are all automatically
- * called by View, and use the $cacheAction settings set in the controller.
+ * CaptchaInputHelper - use in your view to create the captcha form element
  *
  * @package       Cake.View.Helper
  * @link http://book.cakephp.org/2.0/en/core-libraries/helpers/cache.html
