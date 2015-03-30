@@ -47,15 +47,11 @@ Documentation
 
 For documentation, as well as tutorials, see the [Docs](Docs/Home.md) directory of this repository.
 
-Support
--------
-
-For bugs and feature requests, please use the [issues](https://github.com/CakeDC/migrations/issues) section of this repository.
 
 Contributing
 ------------
 
-This repository follows the [CakeDC Plugin Standard](http://cakedc.com/plugin-standard). If you'd like to contribute new features, enhancements or bug fixes to the plugin, please read our [Contribution Guidelines](http://cakedc.com/contribution-guidelines) for detailed instructions.
+Pull requests welcome.
 
 License
 -------
