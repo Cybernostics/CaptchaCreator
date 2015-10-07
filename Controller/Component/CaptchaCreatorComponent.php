@@ -240,8 +240,4 @@ class CaptchaCreatorComponent extends Component
 
 }
 
-if ( $_SERVER['SCRIPT_FILENAME'] == __FILE__ )
-{
-	CaptchaCreator::generate( 'jason' );
-}
 ?>

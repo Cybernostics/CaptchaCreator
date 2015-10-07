@@ -27,6 +27,11 @@ class ImagesController extends AppController {
  * @var array
  */
 	public $uses = array();
+	
+	public function isAuthorized ($user)
+	{
+	    return true;
+	}
 
 	public $components = array (
 			'CaptchaCreator.CaptchaCreator','Auth');
