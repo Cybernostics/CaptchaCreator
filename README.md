@@ -42,11 +42,6 @@ Requirements
 * PHP 5.2.8+
 * Lib GD
 
-Documentation
--------------
-
-For documentation, as well as tutorials, see the [Docs](Docs/Home.md) directory of this repository.
-
 
 Contributing
 ------------
